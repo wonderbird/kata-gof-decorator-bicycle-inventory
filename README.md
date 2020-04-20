@@ -23,13 +23,22 @@ The program should aggregate the value of the bike as well as all accessories fo
 
 ## Suggested Test Cases
 
-```
-Bike: Montague, Navigator, A12345, 900.00
-Light: Cree, Multifunction, 123, 31.99, Lithium Ion, LED
-Brake: Shimano, Center pull, 123A456B, 50.00
-```
+1. Create a bike without accessories. Verify the bike is displayed correctly
+2. Create a bike with a light. Verify the bike, the accessory and the price are displayed correctly
+3. Create a bike with a light and a brake. Verify the bike, the accessories and the price are displayed correctly
 
 ```
+Sum value: $900.00
+Bike: Montague, Navigator, A12345, $900.00
+
+Sum value: $931.99
+Bike: Montague, Navigator, A12345, $900.00
+Light: Cree, Multifunction, 123, $31.99, Lithium Ion, LED
+
+Sum value: $981.99
+Bike: Montague, Navigator, A12345, $900.00
+Light: Cree, Multifunction, 123, $31.99, Lithium Ion, LED
+Brake: Shimano, Center pull, 123A456B, $50.00\n
 ```
 
 ## Finishing Touches
