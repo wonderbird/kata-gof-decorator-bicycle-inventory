@@ -1,6 +1,4 @@
-using System.Globalization;
-
-namespace kata_gof_decorator_bicycle_inventory_tests
+namespace kata_gof_decorator_bicycle_inventory
 {
     public class Bicycle
     {
@@ -9,11 +7,11 @@ namespace kata_gof_decorator_bicycle_inventory_tests
         public string SerialNumber { get; set; }
         public decimal Value { get; set; }
 
-        public string AsString()
+        public virtual string AsString()
         {
-            var us = new CultureInfo("en-US");
-            return "Sum value: " + Value.ToString("c", us) + "\n"
-                   + $"{Make}, {Model}, {SerialNumber}, " + Value.ToString("c", us);
+            var valueString = Value.AsUsCurrencyString();
+            return $"Sum value: {valueString}\n"
+                   + $"Bike: {Make}, {Model}, {SerialNumber}, {valueString}";
         }
     }
 }
