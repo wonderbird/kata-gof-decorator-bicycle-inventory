@@ -7,12 +7,12 @@ namespace kata_gof_decorator_bicycle_inventory_tests
     {
         private const string SimpleBikeAsString =
             "Sum value: $900.00\n"
-            + "Bike: Montague, Navigator, A12345, $900.00";
+            + "Bike: Montague, Navigator, A12345, $900.00\n";
 
         private const string LightDecoratedBikeAsString =
-            "Sum value: $900.00\n" // $931.99
+            "Sum value: $931.99\n"
             + "Bike: Montague, Navigator, A12345, $900.00\n"
-            + "Light: Cree, Multifunction, 123, $31.99, Lithium Ion, LED";
+            + "Light: Cree, Multifunction, 123, $31.99, Lithium Ion, LED\n";
 
         [Fact]
         public void SimpleBike__DisplaysBikeValueAndProperties()

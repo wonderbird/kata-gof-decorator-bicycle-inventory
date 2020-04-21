@@ -9,9 +9,18 @@ namespace kata_gof_decorator_bicycle_inventory
 
         public virtual string AsString()
         {
-            var valueString = Value.AsUsCurrencyString();
-            return $"Sum value: {valueString}\n"
-                   + $"Bike: {Make}, {Model}, {SerialNumber}, {valueString}";
+            return SumValueUsCurrencyString()
+                   + TrackableItemDescription();
+        }
+
+        public virtual string TrackableItemDescription()
+        {
+            return $"Bike: {Make}, {Model}, {SerialNumber}, {Value.AsUsCurrencyString()}\n";
+        }
+
+        protected virtual string SumValueUsCurrencyString()
+        {
+            return $"Sum value: {Value.AsUsCurrencyString()}\n";
         }
     }
 }

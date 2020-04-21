@@ -16,18 +16,19 @@ namespace kata_gof_decorator_bicycle_inventory_tests
 
         public override string AsString()
         {
-            var valueString = AsCurrencyString();
-
-            var accessory = $"Light: {Make}, {Model}, {SerialNumber}, {valueString}, {BatteryType}, {LightBulb}";
-
-            return _bicycle.AsString()
-                   + "\n" + accessory;
+            return SumValueUsCurrencyString()
+                   + _bicycle.TrackableItemDescription()
+                   + TrackableItemDescription();
         }
 
-        private string AsCurrencyString()
+        public override string TrackableItemDescription()
         {
-            var valueString = Value.AsUsCurrencyString();
-            return valueString;
+            return $"Light: {Make}, {Model}, {SerialNumber}, {Value.AsUsCurrencyString()}, {BatteryType}, {LightBulb}\n";
+        }
+
+        protected override string SumValueUsCurrencyString()
+        {
+            return $"Sum value: {(_bicycle.Value + Value).AsUsCurrencyString()}\n";
         }
     }
 }
