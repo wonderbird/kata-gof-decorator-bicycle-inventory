@@ -17,9 +17,9 @@ namespace kata_gof_decorator_bicycle_inventory
 
         protected abstract string ItemDescription();
 
-        protected override decimal Value()
+        public override decimal Value()
         {
-            return _bicycle.Cost + Cost;
+            return _bicycle.Value() + Cost;
         }
     }
 }

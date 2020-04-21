@@ -17,15 +17,14 @@ The program should aggregate the value of the bike as well as all accessories fo
 ## Requirements
 
 - Every bicycle and every accessory is described by the properties make, model, serial number and value.
-- Bicycles can be decorated with the following items described by additional properties:
-  - Lights: battery type, light bulb type
-  - Brakes: brake style, part number
+- Bicycles can be decorated with brakes which have the same properties as a bicycle
+- Bicycles an be decorated with Lights which add the following properties: battery type, light bulb type
 
 ## Suggested Test Cases
 
 1. Create a bike without accessories. Verify the bike is displayed correctly
 2. Create a bike with a light. Verify the bike, the accessory and the price are displayed correctly
-3. Create a bike with a light. Verify the bike, the accessory and the price are displayed correctly
+3. Create a bike with a brake. Verify the bike, the accessory and the price are displayed correctly
 4. Create a bike with a light and a brake. Verify the bike, the accessories and the price are displayed correctly
 
 ```

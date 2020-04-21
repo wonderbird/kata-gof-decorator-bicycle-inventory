@@ -14,6 +14,6 @@ namespace kata_gof_decorator_bicycle_inventory
         }
 
         public abstract string Description();
-        protected abstract decimal Value();
+        public abstract decimal Value();
     }
 }

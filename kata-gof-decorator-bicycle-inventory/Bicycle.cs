@@ -7,7 +7,7 @@ namespace kata_gof_decorator_bicycle_inventory
             return $"Bike: {Make}, {Model}, {SerialNumber}, {Cost.AsUsCurrencyString()}\n";
         }
 
-        protected override decimal Value()
+        public override decimal Value()
         {
             return Cost;
         }
