@@ -22,7 +22,7 @@ namespace kata_gof_decorator_bicycle_inventory_tests
                 Make = "Montague",
                 Model = "Navigator",
                 SerialNumber = "A12345",
-                Value = 900.0m
+                Cost = 900.0m
             };
 
             Assert.Equal(SimpleBikeAsString, bicycle.AsString());
@@ -36,7 +36,7 @@ namespace kata_gof_decorator_bicycle_inventory_tests
                 Make = "Montague",
                 Model = "Navigator",
                 SerialNumber = "A12345",
-                Value = 900.0m
+                Cost = 900.0m
             };
 
             bicycle = new Lights(bicycle)
@@ -44,7 +44,7 @@ namespace kata_gof_decorator_bicycle_inventory_tests
                 Make = "Cree",
                 Model = "Multifunction",
                 SerialNumber = "123",
-                Value = 31.99m,
+                Cost = 31.99m,
                 BatteryType = "Lithium Ion",
                 LightBulb = "LED",
             };

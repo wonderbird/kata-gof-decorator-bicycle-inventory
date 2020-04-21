@@ -5,22 +5,22 @@ namespace kata_gof_decorator_bicycle_inventory
         public string Make { get; set; }
         public string Model { get; set; }
         public string SerialNumber { get; set; }
-        public decimal Value { get; set; }
+        public decimal Cost { get; set; }
 
-        public virtual string AsString()
+        public string AsString()
         {
-            return SumValueUsCurrencyString()
-                   + TrackableItemDescription();
+            return $"Sum value: {Value().AsUsCurrencyString()}\n"
+                   + Description();
         }
 
-        public virtual string TrackableItemDescription()
+        public virtual string Description()
         {
-            return $"Bike: {Make}, {Model}, {SerialNumber}, {Value.AsUsCurrencyString()}\n";
+            return $"Bike: {Make}, {Model}, {SerialNumber}, {Cost.AsUsCurrencyString()}\n";
         }
 
-        protected virtual string SumValueUsCurrencyString()
+        protected virtual decimal Value()
         {
-            return $"Sum value: {Value.AsUsCurrencyString()}\n";
+            return Cost;
         }
     }
 }

@@ -5,7 +5,6 @@ namespace kata_gof_decorator_bicycle_inventory_tests
     public class Lights : Bicycle
     {
         private readonly Bicycle _bicycle;
-
         public string BatteryType { get; set; }
         public string LightBulb { get; set; }
 
@@ -14,21 +13,15 @@ namespace kata_gof_decorator_bicycle_inventory_tests
             _bicycle = bicycle;
         }
 
-        public override string AsString()
+        public override string Description()
         {
-            return SumValueUsCurrencyString()
-                   + _bicycle.TrackableItemDescription()
-                   + TrackableItemDescription();
+            return _bicycle.Description()
+                    + $"Light: {Make}, {Model}, {SerialNumber}, {Cost.AsUsCurrencyString()}, {BatteryType}, {LightBulb}\n";
         }
 
-        public override string TrackableItemDescription()
+        protected override decimal Value()
         {
-            return $"Light: {Make}, {Model}, {SerialNumber}, {Value.AsUsCurrencyString()}, {BatteryType}, {LightBulb}\n";
-        }
-
-        protected override string SumValueUsCurrencyString()
-        {
-            return $"Sum value: {(_bicycle.Value + Value).AsUsCurrencyString()}\n";
+            return _bicycle.Cost + Cost;
         }
     }
 }
