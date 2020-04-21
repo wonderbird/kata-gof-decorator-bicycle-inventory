@@ -55,13 +55,13 @@ namespace kata_gof_decorator_bicycle_inventory_tests
                 Make = "Shimano",
                 Model = "Center pull",
                 SerialNumber = "123A456B",
-                Cost = 50.00m,
+                Cost = 50.00m
             };
 
             Assert.Equal(BrakeDecoratedBikeAsString, bicycle.AsString());
         }
 
-        private static Bicycle CreateBike()
+        private static TrackableItem CreateBike()
         {
             return new Bicycle
             {
