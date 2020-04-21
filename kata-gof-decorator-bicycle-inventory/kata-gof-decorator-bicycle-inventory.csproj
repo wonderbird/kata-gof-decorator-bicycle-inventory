@@ -49,5 +49,8 @@
     <Compile Include="TrackableItemDecorator.cs" />
     <Compile Include="ValueConverterExtension.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="DecoratorPattern.cd" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

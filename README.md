@@ -20,6 +20,10 @@ The program should aggregate the value of the bike as well as all accessories fo
 - Bicycles can be decorated with brakes which have the same properties as a bicycle
 - Bicycles an be decorated with Lights which add the following properties: battery type, light bulb type
 
+## Suggested Class Diagram
+
+![Decorator Pattern](DecoratorPattern.png)
+
 ## Suggested Test Cases
 
 1. Create a bike without accessories. Verify the bike is displayed correctly

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="kata_gof_decorator_bicycle_inventory.TrackableItem">
+    <Position X="1.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAgAAAAAABAAAAEAAAAAAAggAAIAAAA=</HashCode>
+      <FileName>TrackableItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kata_gof_decorator_bicycle_inventory.TrackableItemDecorator">
+    <Position X="3" Y="4" Width="2" />
+    <Members>
+      <Method Name="TrackableItemDecorator" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAgAAAAAAAAAAAAAAACAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>TrackableItemDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kata_gof_decorator_bicycle_inventory.Bicycle" Collapsed="true">
+    <Position X="0.5" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Bicycle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kata_gof_decorator_bicycle_inventory.Brake">
+    <Position X="4.5" Y="7" Width="2" />
+    <Members>
+      <Method Name="Brake" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Brake.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kata_gof_decorator_bicycle_inventory.Light">
+    <Position X="1.5" Y="7" Width="2" />
+    <Members>
+      <Method Name="Light" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AABAAQAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Light.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
