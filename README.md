@@ -18,7 +18,7 @@ The program should aggregate the value of the bike as well as all accessories fo
 
 - Every bicycle and every accessory is described by the properties make, model, serial number and value.
 - Bicycles can be decorated with brakes which have the same properties as a bicycle
-- Bicycles an be decorated with Lights which add the following properties: battery type, light bulb type
+- Bicycles an be decorated with lights which add the following properties: battery type, light bulb type
 
 ## Suggested Class Diagram
 
@@ -27,21 +27,21 @@ The program should aggregate the value of the bike as well as all accessories fo
 ## Suggested Test Cases
 
 1. Create a bike without accessories. Verify the bike is displayed correctly
-2. Create a bike with a light. Verify the bike, the accessory and the price are displayed correctly
-3. Create a bike with a brake. Verify the bike, the accessory and the price are displayed correctly
+2. Create a bike with a brake. Verify the bike, the accessory and the price are displayed correctly
+3. Create a bike with a light. Verify the bike, the accessory and the price are displayed correctly
 4. Create a bike with a light and a brake. Verify the bike, the accessories and the price are displayed correctly
 
 ```
 Sum value: $900.00
 Bike: Montague, Navigator, A12345, $900.00
 
-Sum value: $931.99
-Bike: Montague, Navigator, A12345, $900.00
-Light: Cree, Multifunction, 123, $31.99, Lithium Ion, LED
-
 Sum value: $950.00
 Bike: Montague, Navigator, A12345, $900.00
 Brake: Shimano, Center pull, 123A456B, $50.00
+
+Sum value: $931.99
+Bike: Montague, Navigator, A12345, $900.00
+Light: Cree, Multifunction, 123, $31.99, Lithium Ion, LED
 
 Sum value: $981.99
 Bike: Montague, Navigator, A12345, $900.00
@@ -53,7 +53,7 @@ Brake: Shimano, Center pull, 123A456B, $50.00
 
 - Avoid duplicated code (use `tools\dupfinder.bat`).
 - Fix all static code analysis warnings.
-- Check the Cyclomatic Complexity of your source code files. For me, the most complex class hat a value of 8 and the most complex method has a value of 5. See Visual Studio -> Analyze -> Calculate Code Metrics.
+- Check the Cyclomatic Complexity of your source code files. For me, the most complex class hat a value of 8 and the most complex method has a value of 2. See Visual Studio -> Analyze -> Calculate Code Metrics.
 
 ## References
 
